@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Videos - Argi Smart{% endblock %}
+
+{% block content %}
+<section style="padding-top: 150px;">
+    <div class="container">
+        <div class="section-header">
+            <h2>🎥 Video Gallery</h2>
+            <p>Student testimonials, farming activities, and festival highlights</p>
+        </div>
+        <div class="cards">
+            {% for video in videos %}
+            <div class="card">
+                <div class="card-body">
+                    <h3>{{ video.title }}</h3>
+                    <p>{{ video.description }}</p>
+                </div>
+                <video width="100%" height="280" controls>
+                    <source src="{{ video.url }}" type="video/mp4">
+                </video>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

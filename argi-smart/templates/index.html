@@ -1,0 +1,504 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- HOME SECTION -->
+<div class="hero" id="home">
+    <div class="hero-content" style="padding-top: 80px;">
+        <h1 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.8);">Agriculture School for Organic & Natural Farming - From Soil to Self-Reliance</h1> 
+        <div style="margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto; text-align: center;">
+            <p style="font-size: 1.8rem; margin-bottom: 1rem; line-height: 1.8; font-weight: 600; color: #fff; text-shadow: 2px 2px 5px rgba(0,0,0,0.8);">An agriculture school built for underprivileged children who deserve more than survival they deserve ownership, dignity, and leadership. We teach them to grow food, build enterprises, and rebuild villages.</p>
+            <p style="font-size: 1.8rem; font-weight: 800; line-height: 1.4; background: rgba(5, 150, 105, 0.95); color: #fff; padding: 0.8rem 1.5rem; border-radius: 12px; display: inline-block; margin-top: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Not charity. Opportunity</p>
+        </div>
+    </div>
+</div>
+
+<!-- PURPOSE SECTION -->
+<section id="purpose" style="background: #f5f5dc;">
+    <div class="container">
+        <div class="section-header">
+            <h2> OUR PURPOSE</h2>
+            <h3 style="font-size: 2.2rem; color: #059669; margin: 1rem 0;">Education That Feeds the Future</h3>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+            <div>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: #555; margin-bottom: 0.3rem;">Millions of rural children grow up around farms but never learn how to own one profitably.</p>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: #555; margin-bottom: 0.3rem;">We envision to change that.</p>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: #555;"><strong>This is a school where soil becomes strength and farming becomes freedom.</strong></p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='uploads/purpose-image.jpg') }}" alt="Farm School Students" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+            </div>
+        </div>
+        
+        <div style="margin: 4rem 0;">
+            <h3 style="font-size: 2rem; color: #059669; text-align: center; margin-bottom: 1rem;">Vision</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 3rem;">
+                <div>
+                    <img src="{{ url_for('static', filename='uploads/ourvision.jpeg') }}" alt="Our Vision" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+                </div>
+                <div>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: #333; font-weight: 500;">To build India's first fully practical, income-generating Organic & Natural Farming School that transforms underprivileged youth into profitable farm entrepreneurs and village Organic and natural Farming leaders.</p>
+                </div>
+            </div>
+            
+        <div style="margin: 4rem 0;">
+            <h3 style="font-size: 2rem; color: #059669; text-align: center; margin-bottom: 1rem;">Mission</h3>
+            <div style="max-width: 900px; margin: 0 auto; text-align: left;">
+                <p style="font-size: 1.8rem; line-height: 1.4; color: #555; margin-bottom: 0.3rem;">• Teach 100% practical organic and natural farming</p>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: #555; margin-bottom: 0.3rem;">• Integrate farming + business + communication + marketing</p>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: #555; margin-bottom: 0.3rem;">• Provide land access post graduation</p>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: #555; margin-bottom: 0.3rem;">• Create a tribe-based alumni ecosystem (Farm to consumer)</p>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: #555; margin-bottom: 0.3rem;">• Make students income-generating while learning</p>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: #555;">• Prepare and develop for international opportunities</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROGRAM SECTION -->
+<section id="program" style="background: #d2b48c;">
+    <div class="container">
+        <div class="section-header">
+            <h2>OUR PROGRAM</h2>
+        </div>
+
+        <div style="margin-bottom: 4rem;">
+            <h3 style="font-size: 2.2rem; color: #059669; text-align: center; margin-bottom: 1rem;">Learning With Hands in the Soil</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <img src="{{ url_for('static', filename='uploads/PRACTICAL_FARM_CLASSROOM.jpeg') }}" alt="Farm Classroom" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+                </div>
+                <div>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: #555; margin-bottom: 0.3rem;">This is not classroom theory. It's real crops, real income, real markets.</p>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: #555;">Students learn organic and natural farming, farm business, digital selling, and communication all while practicing daily on the land.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin: 4rem 0;">
+            <h3 style="font-size: 2.2rem; color: #059669; text-align: center; margin-bottom: 1rem;">WHO WE SERVE</h3>
+            <h4 style="font-size: 1.8rem; color: #333; text-align: center; margin-bottom: 1rem;">For Underprivileged Children With Big Dreams</h4>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div style="display: flex; justify-content: center;">
+                    <img src="{{ url_for('static', filename='uploads/boy.jpg') }}" alt="Students" style="width: 70%; max-width: 400px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+                </div>
+                <div>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: #555; margin-bottom: 0.3rem;">We welcome children from rural and economically challenged backgrounds who have passion but lack opportunity.</p>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: #059669; font-weight: 600;">Education is free. Dignity is earned. Land is available in plenty.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin: 4rem 0;">
+            <h3 style="font-size: 2.2rem; color: #059669; text-align: center; margin-bottom: 1rem;">EARN WHILE YOU LEARN</h3>
+            <h4 style="font-size: 1.8rem; color: #333; text-align: center; margin-bottom: 1rem;">Education Without Debt</h4>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 3rem;">
+                <div>
+                    <img src="{{ url_for('static', filename='uploads/SMART.JPG') }}" alt="Earn While You Learn" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+                </div>
+                <div>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: #555; margin-bottom: 0.5rem;">Students generate income through:</p>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: #059669; font-weight: 600; margin-bottom: 0.3rem;">Farm produce</p>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: #059669; font-weight: 600; margin-bottom: 0.3rem;">E-commerce sales</p>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: #059669; font-weight: 600; margin-bottom: 0.3rem;">Workshops</p>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: #059669; font-weight: 600; margin-bottom: 0.5rem;">Farm tourism</p>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: #333; font-weight: 600; font-style: italic;">Learning feeds their families, even before graduation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin: 4rem 0;">
+            <h3 style="font-size: 2.2rem; color: #059669; text-align: center; margin-bottom: 1rem;">ORGANIC LAB & DIGITAL CLASSROOM</h3>
+            <h4 style="font-size: 1.8rem; color: #333; text-align: center; margin-bottom: 1rem;">Where Science Meets Nature</h4>
+            <p style="font-size: 1.8rem; line-height: 1.4; color: #555; text-align: center; max-width: 800px; margin: 0 auto 0.3rem;">We teach natural formulations, seed preservation, soil health, and sustainable methods alongside communication and digital skills.</p>
+            <p style="font-size: 1.8rem; line-height: 1.8; color: #059669; font-weight: 600; font-style: italic; text-align: center; margin-bottom: 3rem;">Ancient wisdom. Modern tools. One purpose.</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 4rem;">
+                <img src="{{ url_for('static', filename='uploads/seed training.jpg') }}" alt="Seed Training" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+                <img src="{{ url_for('static', filename='uploads/digital learning.jpg') }}" alt="Digital Learning" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+            </div>
+        </div>
+
+        <div style="margin: 4rem 0;">
+            <h3 style="font-size: 2.2rem; color: #059669; text-align: center; margin-bottom: 1.5rem;">STUDENT FARM PLOTS</h3>
+            <h4 style="font-size: 1.8rem; color: #333; text-align: center; margin-bottom: 1.5rem;">Own Piece of Earth</h4>
+            <p style="font-size: 1.8rem; line-height: 1.8; color: #555; text-align: center; max-width: 800px; margin: 0 auto 1rem;">Every student receives a personal farming plot to cultivate. They plan it. They grow it. They sell it.</p>
+            <p style="font-size: 1.8rem; line-height: 1.8; color: #059669; font-weight: 600; font-style: italic; text-align: center; margin-bottom: 3rem;">From Day One, they are farmers not spectators.</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 4rem;">
+                <img src="{{ url_for('static', filename='uploads/picture3.jpg') }}" alt="Student Farm Plots" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+                <img src="{{ url_for('static', filename='uploads/picture4.jpg') }}" alt="Student Farm Plots" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+            </div>
+        </div>
+
+        <div style="margin: 4rem 0;">
+            <h3 style="font-size: 2.2rem; color: #059669; text-align: center; margin-bottom: 1.5rem;">ORGANIC & NATURAL E-COMMERCE PORTAL</h3>
+            <h4 style="font-size: 1.8rem; color: #333; text-align: center; margin-bottom: 1.5rem;">From Village Soil to Global Market</h4>
+            <p style="font-size: 1.8rem; line-height: 1.8; color: #555; text-align: center; max-width: 800px; margin: 0 auto 1rem;">Students learn how to sell what they grow through our digital organic marketplace. They manage products, pricing, branding, and online sales turning crops into income.</p>
+            <p style="font-size: 1.8rem; line-height: 1.8; color: #059669; font-weight: 600; font-style: italic; text-align: center; margin-bottom: 3rem;">Technology meets tradition.</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 4rem;">
+                <img src="{{ url_for('static', filename='uploads/sale.jpg') }}" alt="E-commerce Sales" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+                <img src="{{ url_for('static', filename='uploads/system.jpg') }}" alt="E-commerce System" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+            </div>
+        </div>
+
+        <div style="margin: 4rem 0;">
+            <h3 style="font-size: 2.2rem; color: #059669; text-align: center; margin-bottom: 1.5rem;">EARTH-FRIENDLY LIVING</h3>
+            <h4 style="font-size: 1.8rem; color: #333; text-align: center; margin-bottom: 1.5rem;">Living With the Land</h4>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+                <div>
+                    <img src="{{ url_for('static', filename='uploads/earth.jpg') }}" alt="Earth-Friendly Living" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+                </div>
+                <div>
+                    <p style="font-size: 1.8rem; line-height: 1.8; color: #555; margin-bottom: 1rem;">Our mud-built hostels are simple, breathable, and sustainable. Students live together, eat together, grow together forming bonds that last a lifetime.</p>
+                    <p style="font-size: 1.8rem; line-height: 1.8; color: #059669; font-weight: 600; font-style: italic;">Community is our classroom too.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin: 4rem 0;">
+            <h3 style="font-size: 2.2rem; color: #059669; text-align: center; margin-bottom: 1.5rem;">ECO KITCHEN & DINING</h3>
+            <h4 style="font-size: 1.8rem; color: #333; text-align: center; margin-bottom: 1.5rem;">Farm to Plate, Every Day</h4>
+            <p style="font-size: 1.8rem; line-height: 1.8; color: #555; text-align: center; max-width: 800px; margin: 0 auto 1rem;">Students cook with the vegetables they grow. Food is not just nutrition it is responsibility and pride.</p>
+            <p style="font-size: 1.8rem; line-height: 1.8; color: #059669; font-weight: 600; font-style: italic; text-align: center; margin-bottom: 3rem;">They taste the result of their own effort.</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 4rem;">
+                <img src="{{ url_for('static', filename='uploads/kitchen.jpg') }}" alt="Eco Kitchen" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+                <img src="{{ url_for('static', filename='uploads/dining.jpg') }}" alt="Dining" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PARTNER PROGRAM SECTION -->
+<section id="partner" style="background: #86efac;">
+    <div class="container">
+        <div class="section-header">
+            <h2>🤝 CORPORATE & PARTNER PROGRAMS</h2>
+            <h3 style="font-size: 2.2rem; color: #059669; margin: 1rem 0;">Sustainable Collaboration</h3>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+            <div>
+                <p style="font-size: 1.8rem; line-height: 1.8; color: #555; margin-bottom: 1rem;">Corporate teams visit for retreats, sustainability programs, and farm immersion.</p>
+                <p style="font-size: 1.8rem; line-height: 1.8; color: #555; margin-bottom: 1rem;">Every visit supports the education of underprivileged students.</p>
+                <p style="font-size: 1.8rem; line-height: 1.8; color: #059669; font-weight: 600; font-style: italic;">Business meets purpose.</p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='uploads/partner.jpg') }}" alt="Corporate Partners" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- TOURISM SECTION -->
+<section id="tourism" style="background: #a0826d;">
+    <div class="container">
+        <div class="section-header">
+            <h2 style="color: white;">🌿 FARM TOURISM & FAMILY VISITS</h2>
+            <h3 style="font-size: 2.2rem; color: #fef3c7; margin: 1rem 0;">Reconnecting Children With Soil</h3>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+            <div>
+                <img src="{{ url_for('static', filename='uploads/tour.jpg') }}" alt="Farm Tourism" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+            </div>
+            <div>
+                <p style="font-size: 1.8rem; line-height: 1.8; color: white; margin-bottom: 1rem;">Families visit the farm to harvest, cook, and experience rural life.</p>
+                <p style="font-size: 1.8rem; line-height: 1.8; color: #fef3c7; font-weight: 600; font-style: italic;">Urban children rediscover nature. Rural children rediscover pride.</p>
+            </div>
+        </div>
+
+        <div style="margin: 4rem 0;">
+            <h3 style="font-size: 2.2rem; color: white; text-align: center; margin-bottom: 1.5rem;">ART GALLERY, WORKSHOPS & MEDITATION</h3>
+            <h4 style="font-size: 1.8rem; color: #fef3c7; text-align: center; margin-bottom: 1.5rem;">Farming Is More Than Food</h4>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.8rem; line-height: 1.8; color: white; margin-bottom: 1rem;">We nurture creativity and inner balance through art, pottery, workshops, and meditation.</p>
+                <p style="font-size: 1.8rem; line-height: 1.8; color: #fef3c7; font-weight: 600; font-style: italic;">Strong hands. Calm minds. Compassionate hearts.</p>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- FESTIVAL SECTION -->
+<section id="festival" style="background: #6B4423;">
+    <div class="container">
+        <div class="section-header">
+            <h2 style="color: white;">ANNUAL MUD & EARTH RENOVATION FESTIVAL</h2>
+            <h3 style="font-size: 2.2rem; color: #fef3c7; margin: 1rem 0;">A Celebration of Soil</h3>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 2rem;">
+            <div>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: white; margin-bottom: 0.3rem;">Once a year, students, alumni, supporters, stakeholders gather to restore and rebuild our Learning Temple structures.</p>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: #fef3c7; font-weight: 600; font-style: italic; margin-bottom: 0.3rem;">It is not maintenance. It is culture. It is ownership.</p>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: white; font-weight: 600;">They protect what they build.</p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='uploads/festival.jpg') }}" alt="Festival" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+            </div>
+        </div>
+
+        <div style="margin: 2rem 0;">
+            <h3 style="font-size: 2.2rem; color: white; text-align: center; margin-bottom: 1rem;">STUDENT UNION</h3>
+            <h4 style="font-size: 1.8rem; color: #fef3c7; text-align: center; margin-bottom: 1rem;">Young Leaders in Action</h4>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 2rem;">
+                <div>
+                    <img src="{{ url_for('static', filename='uploads/reunion.jpg') }}" alt="Student Union" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+                </div>
+                <div>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: white; margin-bottom: 0.3rem;">Our Student Union trains children to organize, lead, and represent their community.</p>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: white; margin-bottom: 0.3rem;">Leadership begins on campus and continues into villages they came from.</p>
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: #fef3c7; font-weight: 600; font-style: italic;">We grow confident, responsible change makers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto;">
+            <p style="font-size: 1.8rem; line-height: 1.4; color: white; margin-bottom: 0.3rem;">Hands-on rebuilding of farm structures using natural materials</p>
+            <p style="font-size: 1.8rem; line-height: 1.4; color: white; margin-bottom: 0.3rem;">Students, alumni, and families working together</p>
+            <p style="font-size: 1.8rem; line-height: 1.4; color: white; margin-bottom: 0.3rem;">Traditional performances and celebrations</p>
+            <p style="font-size: 1.8rem; line-height: 1.4; color: white; margin-bottom: 0.3rem;">Student union organizing and managing events</p>
+            <p style="font-size: 1.8rem; line-height: 1.4; color: white; margin-bottom: 0.3rem;">Building a sense of belonging and responsibility</p>
+            <p style="font-size: 1.8rem; line-height: 1.4; color: white;">Pottery, painting, and traditional crafts</p>
+        </div>
+    </div>
+</section>
+
+<!-- WELCOME SECTION -->
+<section style="background: #f9fafb; padding: 3rem 0;">
+    <div class="container">
+        <div class="section-header" style="margin-bottom: 1.5rem;">
+            <h2>For Underprivileged Children With Big Dreams</h2>
+            <h3 style="font-size: 2.2rem; color: #059669; margin: 0.5rem 0;">Students</h3>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-top: 1.5rem;">
+            <div>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: #555; margin-bottom: 0.3rem;">We welcome children from rural and economically challenged backgrounds who have passion but lack opportunity.</p>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: #059669; font-weight: 600; margin-bottom: 0.3rem;">Education is free. Dignity is earned.</p>
+                <p style="font-size: 1.8rem; line-height: 1.4; color: #555;">Land is available in plenty.</p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='uploads/class room.jpg') }}" alt="Rural Children" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TEAM SECTION -->
+<section id="team" style="background: #1e4620;">
+    <div class="container">
+        <div class="section-header">
+            <h2 style="color: white;">ALUMNI TRIBE</h2>
+            <h3 style="font-size: 2.2rem; color: #a7f3d0; margin: 1rem 0;">Once a Student. Always a Farmer.</h3>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+            <div>
+                <p style="font-size: 1.8rem; line-height: 1.8; color: white; margin-bottom: 1rem;">Graduates return to their villages with land opportunities, business skills, and a support network.</p>
+                <p style="font-size: 1.8rem; line-height: 1.8; color: white; margin-bottom: 1rem;">They become district ambassadors of organic farming.</p>
+                <p style="font-size: 1.8rem; line-height: 1.8; color: #a7f3d0; font-weight: 600; font-style: italic;">One tribe. Many villages. One mission.</p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='uploads/alumini.jpg') }}" alt="Alumni Tribe" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+            </div>
+        </div>
+
+        <div style="margin: 4rem 0;">
+            <h3 style="font-size: 2.2rem; color: white; text-align: center; margin-bottom: 2rem;">Campus Layout</h3>
+            <h4 style="font-size: 1.8rem; color: #a7f3d0; text-align: center; margin-bottom: 2rem;">School for Organic and Natural Farming Layout</h4>
+            <div style="max-width: 1200px; margin: 0 auto 3rem;">
+                <img src="{{ url_for('static', filename='uploads/CAMPUS .jpg') }}" alt="Campus Layout" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+            </div>
+            <div style="max-width: 100%; margin: 0 auto; padding: 0 2rem;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 4rem;">
+                    <p style="font-size: 1.4rem; line-height: 2; color: white; font-weight: 700;">Demonstration Plots Hands on learning areas for crop cultivation</p>
+                    <p style="font-size: 1.4rem; line-height: 2; color: white; font-weight: 700;">Seed Bank Preservation of organic and heirloom seeds</p>
+                    <p style="font-size: 1.4rem; line-height: 2; color: white; font-weight: 700;">Livestock Zone Animal husbandry and integrated farming</p>
+                    <p style="font-size: 1.4rem; line-height: 2; color: white; font-weight: 700;">Compost & Input Unit Organic fertilizer and soil amendment production</p>
+                    <p style="font-size: 1.4rem; line-height: 2; color: white; font-weight: 700;">Processing & Packaging Centre Value addition and product preparation</p>
+                    <p style="font-size: 1.4rem; line-height: 2; color: white; font-weight: 700;">Classrooms Traditional learning spaces for theory</p>
+                    <p style="font-size: 1.4rem; line-height: 2; color: white; font-weight: 700;">Labs and Library Research facilities and knowledge resources</p>
+                    <p style="font-size: 1.4rem; line-height: 2; color: white; font-weight: 700;">Online Language Lab Digital communication skills development</p>
+                    <p style="font-size: 1.4rem; line-height: 2; color: white; font-weight: 700;">Dormitories Eco friendly student accommodation</p>
+                    <p style="font-size: 1.4rem; line-height: 2; color: white; font-weight: 700;">Recreation Center Sports and wellness activities</p>
+                    <p style="font-size: 1.4rem; line-height: 2; color: white; font-weight: 700;">Corporate Conference Center Meeting spaces for partnerships</p>
+                    <p style="font-size: 1.4rem; line-height: 2; color: white; font-weight: 700;">Farm Tourism Area Visitor experience and education zone</p>
+                    <p style="font-size: 1.4rem; line-height: 2; color: white; font-weight: 700;">Activity Area Arts, crafts, and creative workshops</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section id="faq" style="background: #e8f5e9;">
+    <div class="container">
+        <div class="section-header">
+            <h2>❓ Frequently Asked Questions</h2>
+            <p>Everything you need to know about our program</p>
+        </div>
+
+        <div style="max-width: 800px; margin: 2rem auto;">
+            <div class="feature" style="margin-bottom: 2rem; text-align: left;">
+                <h3>Who can join the program?</h3>
+                <p>Underprivileged rural youth and children interested in organic farming and entrepreneurship. No prior farming experience required.</p>
+            </div>
+
+            <div class="feature" style="margin-bottom: 2rem; text-align: left;">
+                <h3>Is education free?</h3>
+                <p>Yes, education is provided free of cost for eligible students. We focus on making quality farming education accessible to all.</p>
+            </div>
+
+            <div class="feature" style="margin-bottom: 2rem; text-align: left;">
+                <h3>Do students earn money during training?</h3>
+                <p>Yes! Students earn through farm produce selling, e-commerce sales, workshops, and farm tourism activities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" style="background: #fff8e1;">
+    <div class="container">
+        <div class="section-header">
+            <h2>📞 Contact Us</h2>
+            <p>Get in touch for admissions and enquiries</p>
+        </div>
+        <form method="POST" action="{{ url_for('contact') }}">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Your Message (Maximum 30 words)" required maxlength="300"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="feature-grid" style="margin-top: 4rem;">
+            <div class="feature">
+                <div class="feature-icon">📧</div>
+                <h3>Email</h3>
+                <p>aozoiselo@gmail.com</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📞</div>
+                <h3>Phone</h3>
+                <p>+91 9035033443</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📍</div>
+                <h3>Address</h3>
+                <p>Vandavasi Melnarma, Tamil Nadu 604408</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section id="gallery" style="background: #f1f8e9;">
+    <div class="container">
+        <div class="section-header">
+            <h2>🖼️ Photo Gallery</h2>
+            <h3 style="font-size: 2.2rem; color: #059669; margin: 1rem 0;">Glimpses of farm life, student activities, and workshops</h3>
+        </div>
+        <div id="galleryGrid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem;">
+            {% if photos %}
+                {% for photo in photos %}
+                <div class="gallery-item" style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); {% if loop.index > 3 %}display: none;{% endif %}">
+                    <img src="{{ photo.url }}" alt="{{ photo.title }}" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <h3 style="font-size: 1.5rem; color: #059669; margin-bottom: 0.5rem;">{{ photo.title }}</h3>
+                        <p class="gallery-desc" style="font-size: 1.1rem; color: #555; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">{{ photo.description }}</p>
+                        <button onclick="toggleDesc(this)" style="background: none; border: none; color: #059669; font-size: 1rem; cursor: pointer; padding: 0.5rem 0; font-weight: 600;">See more</button>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800" alt="Organic Farming" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <h3 style="font-size: 1.5rem; color: #059669; margin-bottom: 0.5rem;">Organic Farming</h3>
+                        <p class="gallery-desc" style="font-size: 1.1rem; color: #555; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Students learning organic farming techniques in the field</p>
+                        <button onclick="toggleDesc(this)" style="background: none; border: none; color: #059669; font-size: 1rem; cursor: pointer; padding: 0.5rem 0; font-weight: 600;">See more</button>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+        {% if photos and photos|length > 3 %}
+        <div style="text-align: center; margin-top: 2rem;">
+            <button id="toggleGallery" onclick="toggleGallery()" style="background: #16a34a; color: white; padding: 1rem 2rem; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: 600; cursor: pointer;">Show More</button>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<script>
+function toggleGallery() {
+    const items = document.querySelectorAll('.gallery-item');
+    const btn = document.getElementById('toggleGallery');
+    const isShowingAll = btn.textContent === 'Show Less';
+    
+    items.forEach((item, index) => {
+        if (index >= 3) {
+            item.style.display = isShowingAll ? 'none' : 'block';
+        }
+    });
+    
+    btn.textContent = isShowingAll ? 'Show More' : 'Show Less';
+}
+
+function toggleDesc(btn) {
+    const desc = btn.previousElementSibling;
+    const isExpanded = desc.style.webkitLineClamp === 'unset';
+    
+    if (isExpanded) {
+        desc.style.display = '-webkit-box';
+        desc.style.webkitLineClamp = '2';
+        btn.textContent = 'See more';
+    } else {
+        desc.style.display = 'block';
+        desc.style.webkitLineClamp = 'unset';
+        btn.textContent = 'See less';
+    }
+}
+</script>
+
+<!-- VIDEO SECTION -->
+<section id="video" style="background: #e0f2f1;">
+    <div class="container">
+        <div class="section-header">
+            <h2>🎥 Video Gallery</h2>
+            <p>Student testimonials, farming activities, and festival highlights</p>
+        </div>
+        <div class="cards">
+            {% if videos %}
+                {% for video in videos %}
+                <div class="card">
+                    <div class="card-body">
+                        <h3>{{ video.title }}</h3>
+                        <p>{{ video.description }}</p>
+                    </div>
+                    <video width="100%" height="280" controls>
+                        <source src="{{ video.url }}" type="video/mp4">
+                    </video>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Sample Video</h3>
+                        <p>Educational content about organic farming</p>
+                    </div>
+                    <div style="background: #e5e7eb; height: 250px; display: flex; align-items: center; justify-content: center; color: #6b7280;">
+                        Video content will be displayed here
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endblock %}

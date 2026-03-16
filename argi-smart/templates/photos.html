@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery - Argi Smart{% endblock %}
+
+{% block content %}
+<section style="padding-top: 150px;">
+    <div class="container">
+        <div class="section-header">
+            <h2>🖼️ Photo Gallery</h2>
+            <p>Glimpses of farm life, student activities, and workshops</p>
+        </div>
+        <div class="cards">
+            {% for photo in photos %}
+            <div class="card">
+                <div class="card-body">
+                    <h3>{{ photo.title }}</h3>
+                    <p>{{ photo.description }}</p>
+                </div>
+                <img src="{{ photo.url }}" alt="{{ photo.title }}" onclick="openModal({{ loop.index0 }})" style="cursor: pointer;">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<div id="imageModal" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95);">
+    <span onclick="closeModal()" style="position: absolute; top: 20px; right: 40px; color: white; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span>
+    <div style="margin: 80px auto; width: 90%; max-width: 1200px; text-align: center;">
+        <img id="modalImage" style="width: 100%; max-height: 70vh; object-fit: contain; margin-bottom: 20px;">
+        <h2 id="modalTitle" style="color: white; margin-bottom: 10px; font-size: 2rem;"></h2>
+        <p id="modalDescription" style="color: #ddd; font-size: 1.1rem;"></p>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+var photos = {{ photos|tojson }};
+
+function openModal(index) {
+    var photo = photos[index];
+    document.getElementById('imageModal').style.display = 'block';
+    document.getElementById('modalImage').src = photo.url;
+    document.getElementById('modalTitle').textContent = photo.title;
+    document.getElementById('modalDescription').textContent = photo.description;
+}
+
+function closeModal() {
+    document.getElementById('imageModal').style.display = 'none';
+}
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('imageModal')) {
+        closeModal();
+    }
+}
+</script>
+{% endblock %}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Argi Smart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <section style="padding-top: 150px;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Admin Login</h2>
+                <p>Enter phone number and OTP</p>
+            </div>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                    <div style="background: {% if category == 'error' %}#fee2e2{% else %}#d1fae5{% endif %}; color: {% if category == 'error' %}#991b1b{% else %}#065f46{% endif %}; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; text-align: center; max-width: 500px; margin-left: auto; margin-right: auto;">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <form method="POST" style="max-width: 500px; margin: 0 auto;">
+                <input type="text" name="phone" placeholder="Phone Number" required>
+                <input type="text" name="otp" placeholder="OTP" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p style="text-align: center; margin-top: 2rem; color: #666;">
+                Credentials:<br>
+                Phone: 9035033443<br>
+                OTP: 123456
+            </p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - Argi Smart{% endblock %}
+
+{% block content %}
+<section style="padding-top: 150px;">
+    <div class="container">
+        <div class="section-header">
+            <h2>📞 Contact Us</h2>
+            <p>Get in touch for admissions and enquiries</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="feature-grid" style="margin-top: 4rem;">
+            <div class="feature">
+                <div class="feature-icon">📧</div>
+                <h3>Email</h3>
+                <p>admissions@organicfarming.edu</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📞</div>
+                <h3>Phone</h3>
+                <p>+1234567890</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📍</div>
+                <h3>Address</h3>
+                <p>Agriculture Campus, Rural District</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

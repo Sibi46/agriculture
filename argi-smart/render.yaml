@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: argi-smart
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
